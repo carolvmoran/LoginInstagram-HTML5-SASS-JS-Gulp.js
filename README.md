@@ -5,4 +5,5 @@ Projeto de clone da pagina de login do Instagram atual usando HTML5, SASS, JS e 
 ## Getting started
 
 npm i
+
 npm run dev
