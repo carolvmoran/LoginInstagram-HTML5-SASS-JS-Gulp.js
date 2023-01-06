@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+}
+
+.instagramContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
