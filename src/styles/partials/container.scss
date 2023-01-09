@@ -4,20 +4,22 @@
     align-items: center;
     justify-content: center;
     width: 50%;
+    height: 100%;
 }
-
-.iphone {
-    height: 40rem;
+.instagramFotoCelularImg {
+    height: 100%;
+    width: 380px;
+    position: relative;
+    background: url("/imgs/fundoCapaInsta.png") no-repeat center center;
 }
-
 /* Container direito ------------- */
 .instagramContinueConta {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    // justify-content: space-around;
     align-items: center;
-    width: 45%;
-    min-height: 34rem;
+    width: 50%;
+    height: 100%;
 }
 .containerGroup {
     display: flex;
@@ -26,11 +28,15 @@
     align-items: center;
     background-color: white;
     width: 100%;
-    border: 1px solid lightgray;
-    padding: 1.3rem 0;
+    border: 1px solid #dbdbdb;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
     border-radius: 5px;
 }
-
-.containerGroup:nth-child(1) {
-    min-height: 19rem;
+.instagramContainerConta {
+    width: 350px;
+    height: 100%;
 }
+// .containerGroup:nth-child(1) {
+//     min-height: 19rem;
+// }

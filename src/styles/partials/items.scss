@@ -1,12 +1,12 @@
 /* Group 1 ------------- */
-.logoInstagram {
-    background-image: url(img/instagram-logo-4.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 130px;
-    height: 3rem;
+.logoInstagramContainer {
+    margin-top: 36px;
+    margin-bottom: 12px;
+    .logoInstagram {
+        width: 175px;
+        height: auto;
+    }
 }
-
 .containerFoto {
     display: flex;
     align-items: center;
@@ -65,7 +65,37 @@
     background-size: cover;
     background-image: url(img/google-play-and-apple-app-store-logos-22.png);
 }
-
+.iphone {
+    position: absolute;
+    top: 47.5%;
+    right: 17px;
+    transform: translateY(-50%);
+}
+/* Footer ------------------*/
+.responsaveis,
+.footerLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    list-style: none;
+    font-family: $font-family;
+    color: $gray;
+    font-size: 12px;
+    font-weight: 400px;
+}
+.footerLinks li a,
+.responsaveis li {
+    color: $gray;
+    font-size: 12px;
+    font-weight: 400px;
+}
+.footerLinks li a {
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 /* Media Query ------------- */
 
 @media (max-width: 1024px) {
