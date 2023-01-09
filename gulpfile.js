@@ -39,7 +39,7 @@ function sentinel() {
     watch(paths.images.all, { ignoreInitial: false }, moveImages);
 }
 function html() {
-    return src(paths.html.all).pipe(dest(paths.output));
+    return src(paths.html.all).pipe(dest(paths.output)).pipe(connect.reload());
 }
 function styles() {
     return src(paths.styles.main)

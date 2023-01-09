@@ -1,5 +1,5 @@
-import { Exemple } from "./components/Exemple";
+import { Geral } from "./components/Exemple";
 
 document.addEventListener("DOMContentLoaded", function () {
-    new Exemple();
+    new Geral();
 });
