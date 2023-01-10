@@ -16,27 +16,82 @@
 .instagramContinueConta {
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
     align-items: center;
     width: 50%;
     height: 100%;
 }
 .containerGroup {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    width: 100%;
+    background-color: #fff;
     border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 0 0 10px;
     padding: 10px 0;
-    margin: 0 0 10px 0;
-    border-radius: 5px;
+    &-separatorContainer {
+        margin: 10px 0px 18px;
+        width: 72%;
+    }
+    &-separator {
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #8e8e8e;
+        display: flex;
+        align-items: center;
+        &::after {
+            content: "";
+            border-bottom: 1px solid #dbdbdb;
+            width: 116px;
+            height: 1px;
+            display: block;
+            margin: 0 0 0 18px;
+        }
+        &::before {
+            content: "";
+            margin: 0 18px 0 0;
+            border-bottom: 1px solid #dbdbdb;
+            width: 116px;
+            height: 1px;
+            display: block;
+        }
+    }
+    &-facebookContainer {
+        margin: 8px 0px;
+        figure {
+            display: flex;
+            column-gap: 8px;
+            align-items: center;
+            img {
+                height: 16px;
+                width: auto;
+            }
+            figcaption {
+                color: #385185;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 18px;
+            }
+        }
+    }
+    &-esqueceuSenha {
+        margin: 12px 0 10px;
+        a {
+            color: #00376b;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
 }
 .instagramContainerConta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 350px;
     height: 100%;
+    margin-bottom: 25px;
 }
-// .containerGroup:nth-child(1) {
-//     min-height: 19rem;
-// }

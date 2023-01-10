@@ -1,45 +1,72 @@
 /* Group 1 ------------- */
 .logoInstagramContainer {
-    margin-top: 36px;
+    margin-top: 10px;
     margin-bottom: 12px;
     .logoInstagram {
         width: 175px;
         height: auto;
     }
 }
-.containerFoto {
+
+.form {
+    width: 77%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.fotoPerfilInstagran {
-    background-image: url(img/fotoPerfil.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-}
-
-.loginInstagran {
-    background-color: rgb(24, 156, 243);
-    color: white;
-    padding: 8px;
-    border-radius: 4px;
-}
-
-.logoutInstagran {
-    color: rgb(24, 156, 243);
-    margin-top: 1rem;
+    label {
+        border: 1px solid #dbdbdb;
+        background-color: #fafafa;
+        border-radius: 3px;
+        margin-bottom: 6px;
+        height: 38px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        font-size: 12px;
+        padding: 9px 0 7px 8px;
+        outline: none;
+        &::placeholder {
+            color: #8e8e8e;
+            font-size: 12px;
+        }
+    }
+    button {
+        width: 100%;
+        height: 32px;
+        padding: 7px 16px;
+        background-color: #0095f6;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 8px;
+        margin: 8px 0;
+        &:hover {
+            background-color: #1777f2;
+        }
+    }
 }
 
 /* Group 2 ------------- */
 .texto {
-    color: rgb(100, 100, 100);
-}
-.linkAzul {
-    color: rgb(24, 156, 243);
+    color: #262626;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 15px;
+    .linkAzul {
+        color: #0095f6;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
 }
 
 /* Group 3 ------------- */
@@ -49,21 +76,28 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1.3rem 0;
+    .get-app {
+        width: 100%;
+        margin: 10px 20px;
+        text-align: center;
+        color: #262626;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 .download {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    column-gap: 8px;
     width: 100%;
-    padding: 1rem;
-}
-.appDownload {
-    width: 20rem;
-    height: 3rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(img/google-play-and-apple-app-store-logos-22.png);
+    margin: 10px 0;
+    .appDownload img {
+        height: 40px;
+        width: auto;
+        cursor: pointer;
+    }
 }
 .iphone {
     position: absolute;

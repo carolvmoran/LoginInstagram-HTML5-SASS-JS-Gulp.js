@@ -19,6 +19,6 @@ export class Geral {
             if (indice > 3) indice = 0;
             this.celular.src = arraySrc[indice];
             indice++;
-        }, 4000);
+        }, 5000);
     }
 }
