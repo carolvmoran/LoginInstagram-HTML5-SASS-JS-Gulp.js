@@ -11,10 +11,10 @@ npm run dev
 ## Result
 
 <figure style="display: flex; flex-direction: column;">
-<figcaption style="margin-bottom: 10px">* Desktop:</figcaption>
+<figcaption style="margin-bottom: 10px;">*Desktop:</figcaption>
 <img width="1440" src="/src/assets/imgReadme/Desktop.png" />
-<figcaption style="margin-bottom: 10px">* Tablet:</figcaption>
+<figcaption style="margin-bottom: 10px;">*Tablet:</figcaption>
 <img width="912" src="/src/assets/imgReadme/Tablet.png" />
-<figcaption style="margin-bottom: 10px">* Mobile:</figcaption>
+<figcaption style="margin-bottom: 10px;">*Mobile:</figcaption>
 <img width="414" src="/src/assets/imgReadme/Mobile.png" />
 </figure>
