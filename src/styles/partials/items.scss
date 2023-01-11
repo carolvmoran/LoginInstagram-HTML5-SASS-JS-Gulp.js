@@ -117,6 +117,7 @@
     color: $gray;
     font-size: 12px;
     font-weight: 400px;
+    flex-wrap: wrap;
 }
 .footerLinks li a,
 .responsaveis li {
@@ -124,34 +125,40 @@
     font-size: 12px;
     font-weight: 400px;
 }
-.footerLinks li a {
-    cursor: pointer;
-    &:hover {
-        text-decoration: underline;
+.responsaveis li {
+    margin: 12px 0;
+}
+.footerLinks li {
+    margin-bottom: 12px;
+    a {
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 /* Media Query ------------- */
 
-@media (max-width: 1024px) {
-    .instagramContainer {
-        width: 90%;
-    }
-}
+// @media (max-width: 1024px) {
+//     .instagramContainer {
+//         width: 90%;
+//     }
+// }
 
-@media (max-width: 650px) {
-    body {
-        background-color: white;
-    }
-    .instagramContainer {
-        width: 90%;
-    }
-    .instagramFotoCelular {
-        display: none;
-    }
-    .instagramContinueConta {
-        width: 100%;
-    }
-    .containerGroup {
-        border: none;
-    }
-}
+// @media (max-width: 650px) {
+//     body {
+//         background-color: white;
+//     }
+//     .instagramContainer {
+//         width: 90%;
+//     }
+//     .instagramFotoCelular {
+//         display: none;
+//     }
+//     .instagramContinueConta {
+//         width: 100%;
+//     }
+//     .containerGroup {
+//         border: none;
+//     }
+// }

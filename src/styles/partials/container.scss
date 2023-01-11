@@ -5,6 +5,9 @@
     justify-content: center;
     width: 50%;
     height: 100%;
+    @media (max-width: 900px) {
+        display: none;
+    }
 }
 .instagramFotoCelularImg {
     height: 100%;
@@ -19,6 +22,9 @@
     align-items: center;
     width: 50%;
     height: 100%;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 }
 .containerGroup {
     width: 100%;
@@ -31,6 +37,9 @@
     border-radius: 1px;
     margin: 0 0 10px;
     padding: 10px 0;
+    @media (max-width: 490px) {
+        border: none;
+    }
     &-separatorContainer {
         margin: 10px 0px 18px;
         width: 72%;
@@ -94,4 +103,13 @@
     width: 350px;
     height: 100%;
     margin-bottom: 25px;
+    @media (max-width: 900px) {
+        margin-bottom: 0;
+    }
+    @media (max-width: 490px) {
+        justify-content: space-between;
+    }
+    @media (max-width: 320px) {
+        width: 100%;
+    }
 }
