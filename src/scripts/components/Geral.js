@@ -1,24 +1,22 @@
 export class Geral {
     constructor() {
         this.selectors();
-        this.events();
+        this.nextImage();
     }
     selectors() {
-        this.celular = document.querySelector(".iphone");
+        this.celular = document.querySelectorAll("#instagramFotoCelularImg img");
     }
-    events() {
-        console.log(this.celular.src);
-        let arraySrc = [
-            "/imgs/capainsta.png",
-            "/imgs/capainsta1.png",
-            "/imgs/capainsta2.png",
-            "/imgs/capainsta3.png",
-        ];
-        let indice = 1;
+    nextImage() {
+        let time = 5000;
+        let currentImageIndex = 0;
+        let max = this.celular.length;
         setInterval(() => {
-            if (indice > 3) indice = 0;
-            this.celular.src = arraySrc[indice];
-            indice++;
-        }, 5000);
+            this.celular[currentImageIndex].classList.remove("selected");
+            currentImageIndex++;
+            if (currentImageIndex >= max) {
+                currentImageIndex = 0;
+            }
+            this.celular[currentImageIndex].classList.add("selected");
+        }, time);
     }
 }
