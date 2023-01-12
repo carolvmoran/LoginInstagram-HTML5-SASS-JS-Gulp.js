@@ -11,9 +11,21 @@
 }
 .instagramFotoCelularImg {
     height: 100%;
+    max-height: 803px;
     width: 380px;
     position: relative;
     background: url("/imgs/fundoCapaInsta.png") no-repeat center center;
+    img {
+        position: absolute;
+        top: 47.5%;
+        right: 17px;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 1000ms;
+    }
+    .selected {
+        opacity: 1;
+    }
 }
 /* Container direito ------------- */
 .instagramContinueConta {
