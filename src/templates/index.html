@@ -11,101 +11,94 @@
     <body>
         <main>
             <section class="instagramContainer">
-                <article class="instagramFotoCelular">
-                    <figure class="instagramFotoCelularImg" id="instagramFotoCelularImg">
-                        <img
-                            class="selected"
-                            src="/imgs/capainsta.png"
-                            alt="Foto de um celular com uma Imagem do Instagram"
-                        />
-                        <img
-                            src="/imgs/capainsta1.png"
-                            alt="Foto de um celular com uma Imagem do Instagram"
-                        />
-                        <img
-                            src="/imgs/capainsta2.png"
-                            alt="Foto de um celular com uma Imagem do Instagram"
-                        />
-                        <img
-                            src="/imgs/capainsta3.png"
-                            alt="Foto de um celular com uma Imagem do Instagram"
-                        />
-                    </figure>
-                </article>
-                <section class="instagramContinueConta">
-                    <div class="instagramContainerConta">
-                        <article class="containerGroup">
-                            <figure class="logoInstagramContainer">
-                                <img
-                                    src="/imgs/LogoInstagram.png"
-                                    alt="Logo Instagram"
-                                    class="logoInstagram"
+                <figure class="instagramContainer__fotoCelular" id="instagramFotoCelularImg">
+                    <img
+                        class="selected"
+                        src="/imgs/capainsta.png"
+                        alt="Foto de um celular com uma Imagem do Instagram"
+                    />
+                    <img
+                        src="/imgs/capainsta1.png"
+                        alt="Foto de um celular com uma Imagem do Instagram"
+                    />
+                    <img
+                        src="/imgs/capainsta2.png"
+                        alt="Foto de um celular com uma Imagem do Instagram"
+                    />
+                    <img
+                        src="/imgs/capainsta3.png"
+                        alt="Foto de um celular com uma Imagem do Instagram"
+                    />
+                </figure>
+                <section class="instagramContainer__conta">
+                    <article class="instagramContainer__conta__box">
+                        <figure class="logoInstagramContainer">
+                            <img
+                                src="/imgs/LogoInstagram.png"
+                                alt="Logo Instagram"
+                                class="logoInstagram"
+                            />
+                        </figure>
+                        <form action="" class="form">
+                            <label for="username">
+                                <input
+                                    type="text"
+                                    name="username"
+                                    placeholder="Telefone, nome de usuário ou email"
                                 />
-                            </figure>
-                            <form action="" class="form">
-                                <label for="username">
-                                    <input
-                                        type="text"
-                                        name="username"
-                                        placeholder="Telefone, nome de usuário ou email"
-                                    />
-                                </label>
-                                <label for="password">
-                                    <input type="text" name="password" placeholder="Senha" />
-                                </label>
-                                <button type="submit">Entrar</button>
-                            </form>
-                            <div class="containerGroup-separatorContainer">
-                                <p class="containerGroup-separator">ou</p>
-                            </div>
-                            <div class="containerGroup-facebookContainer">
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <figure>
-                                        <img src="/imgs/LogoFacebook.png" alt="facebook" />
-                                        <figcaption class="containerGroup-facebook">
-                                            Entrar com o Facebook
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="containerGroup-esqueceuSenha">
-                                <a href="/" target="_blank">Esqueceu a senha?</a>
-                            </div>
-                        </article>
-                        <article class="containerGroup">
-                            <p class="texto">
-                                Não tem uma conta?
-                                <a
-                                    href="https://www.instagram.com/accounts/emailsignup/"
-                                    target="_blank"
-                                    class="linkAzul"
-                                >
-                                    Cadastre-se</a
-                                >
-                            </p>
-                        </article>
-                        <article class="store">
-                            <p class="get-app">Obtenha o aplicativo.</p>
-                            <div class="download">
-                                <a href="#" class="appDownload">
-                                    <figure>
-                                        <img src="/imgs/AppStore.png" alt="Apple Store" />
-                                    </figure>
-                                </a>
-                                <a href="#" class="appDownload">
-                                    <figure>
-                                        <img src="/imgs/GooglePlay.png" alt="Google Play" />
-                                    </figure>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
+                            </label>
+                            <label for="password">
+                                <input type="text" name="password" placeholder="Senha" />
+                            </label>
+                            <button type="submit">Entrar</button>
+                        </form>
+                        <div class="instagramContainer__conta__separatorContainer">
+                            <p class="instagramContainer__conta__separator">ou</p>
+                        </div>
+                        <div class="instagramContainer__conta__facebookContainer">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <figure>
+                                    <img src="/imgs/LogoFacebook.png" alt="facebook" />
+                                    <figcaption>Entrar com o Facebook</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="instagramContainer__conta__esqueceuSenha">
+                            <a href="/" target="_blank">Esqueceu a senha?</a>
+                        </div>
+                    </article>
+                    <article class="instagramContainer__conta__box">
+                        <p class="instagramContainer__conta__box__texto">
+                            Não tem uma conta?
+                            <a
+                                href="https://www.instagram.com/accounts/emailsignup/"
+                                target="_blank"
+                            >
+                                Cadastre-se</a
+                            >
+                        </p>
+                    </article>
+                    <article class="store">
+                        <p class="store__getApp">Obtenha o aplicativo.</p>
+                        <div class="store__download">
+                            <a href="#" class="store__download__app">
+                                <figure>
+                                    <img src="/imgs/AppStore.png" alt="Apple Store" />
+                                </figure>
+                            </a>
+                            <a href="#" class="store__download__app">
+                                <figure>
+                                    <img src="/imgs/GooglePlay.png" alt="Google Play" />
+                                </figure>
+                            </a>
+                        </div>
+                    </article>
                 </section>
             </section>
         </main>
         <footer>
-            <div class="footerLinksContainer">
-                <ul class="footerLinks">
+            <nav>
+                <ul class="footer__top">
                     <li><a>Meta</a></li>
                     <li><a>Sobre</a></li>
                     <li><a>Blog</a></li>
@@ -119,9 +112,9 @@
                     <li><a>Instagram Lite</a></li>
                     <li><a>Carregamento de contatos e não usuários</a></li>
                 </ul>
-            </div>
+            </nav>
             <div>
-                <ul class="responsaveis">
+                <ul class="footer__bottom">
                     <li>Linguas</li>
                     <li>© 2023 Instagram from Meta</li>
                 </ul>

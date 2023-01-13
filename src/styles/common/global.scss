@@ -39,15 +39,3 @@ footer {
         padding: 0 16px;
     }
 }
-.instagramContainer {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    column-gap: 32px;
-    margin: 32px auto;
-    height: 803px;
-    @media (max-width: 490px) {
-        height: 100%;
-        margin: 0 auto;
-    }
-}

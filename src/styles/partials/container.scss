@@ -1,127 +1,137 @@
-/* Container esquerdo ------------- */
-.instagramFotoCelular {
+.instagramContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    @media (max-width: 900px) {
-        display: none;
-    }
-}
-.instagramFotoCelularImg {
-    height: 100%;
-    max-height: 803px;
-    width: 380px;
-    position: relative;
-    background: url("/imgs/fundoCapaInsta.png") no-repeat center center;
-    img {
-        position: absolute;
-        top: 47.5%;
-        right: 17px;
-        transform: translateY(-50%);
-        opacity: 0;
-        transition: opacity 1000ms;
-    }
-    .selected {
-        opacity: 1;
-    }
-}
-/* Container direito ------------- */
-.instagramContinueConta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    @media (max-width: 900px) {
-        width: 100%;
-    }
-}
-.containerGroup {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
-    border-radius: 1px;
-    margin: 0 0 10px;
-    padding: 10px 0;
+    justify-content: start;
+    column-gap: 32px;
+    margin: 32px auto;
+    height: 803px;
     @media (max-width: 490px) {
-        border: none;
+        height: 100%;
+        margin: 0 auto;
     }
-    &-separatorContainer {
-        margin: 10px 0px 18px;
-        width: 72%;
-    }
-    &-separator {
-        font-size: 13px;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: #8e8e8e;
+    /* Container esquerdo ------------- */
+    &__fotoCelular {
         display: flex;
         align-items: center;
-        &::after {
-            content: "";
-            border-bottom: 1px solid #dbdbdb;
-            width: 116px;
-            height: 1px;
-            display: block;
-            margin: 0 0 0 18px;
+        justify-content: center;
+        height: 100%;
+        max-height: 803px;
+        width: 395px;
+        position: relative;
+        background: url("/imgs/fundoCapaInsta.png") no-repeat center center;
+        @media (max-width: 900px) {
+            display: none;
         }
-        &::before {
-            content: "";
-            margin: 0 18px 0 0;
-            border-bottom: 1px solid #dbdbdb;
-            width: 116px;
-            height: 1px;
-            display: block;
+        img {
+            position: absolute;
+            top: 47.5%;
+            right: 23px;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 1000ms;
+        }
+        .selected {
+            opacity: 1;
         }
     }
-    &-facebookContainer {
-        margin: 8px 0px;
-        figure {
+    /* Container direito ------------- */
+    &__conta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 100%;
+        margin-bottom: 25px;
+        @media (max-width: 900px) {
+            margin-bottom: 0;
+        }
+        @media (max-width: 490px) {
+            justify-content: space-between;
+        }
+        @media (max-width: 320px) {
+            width: 100%;
+        }
+        &__box {
+            width: 100%;
             display: flex;
-            column-gap: 8px;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            img {
-                height: 16px;
-                width: auto;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 1px;
+            margin: 0 0 10px;
+            padding: 10px 0;
+            @media (max-width: 490px) {
+                border: none;
             }
-            figcaption {
-                color: #385185;
+            &__texto {
+                color: #262626;
                 font-size: 14px;
-                font-weight: 600;
-                line-height: 18px;
+                font-weight: 400;
+                margin: 15px;
+                a {
+                    color: #0095f6;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                }
             }
         }
-    }
-    &-esqueceuSenha {
-        margin: 12px 0 10px;
-        a {
-            color: #00376b;
-            font-size: 12px;
-            line-height: 16px;
+        &__separatorContainer {
+            margin: 10px 0px 18px;
+            width: 72%;
         }
-    }
-}
-.instagramContainerConta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-    height: 100%;
-    margin-bottom: 25px;
-    @media (max-width: 900px) {
-        margin-bottom: 0;
-    }
-    @media (max-width: 490px) {
-        justify-content: space-between;
-    }
-    @media (max-width: 320px) {
-        width: 100%;
+        &__separator {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #8e8e8e;
+            display: flex;
+            align-items: center;
+            &::after {
+                content: "";
+                border-bottom: 1px solid #dbdbdb;
+                width: 116px;
+                height: 1px;
+                display: block;
+                margin: 0 0 0 18px;
+            }
+            &::before {
+                content: "";
+                margin: 0 18px 0 0;
+                border-bottom: 1px solid #dbdbdb;
+                width: 116px;
+                height: 1px;
+                display: block;
+            }
+        }
+        &__facebookContainer {
+            margin: 8px 0px;
+            figure {
+                display: flex;
+                column-gap: 8px;
+                align-items: center;
+                img {
+                    height: 16px;
+                    width: auto;
+                }
+                figcaption {
+                    color: #385185;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 18px;
+                }
+            }
+        }
+        &__esqueceuSenha {
+            margin: 12px 0 10px;
+            a {
+                color: #00376b;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
     }
 }

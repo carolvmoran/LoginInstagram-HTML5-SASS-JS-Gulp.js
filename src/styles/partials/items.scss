@@ -55,20 +55,6 @@
     }
 }
 
-/* Group 2 ------------- */
-.texto {
-    color: #262626;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 15px;
-    .linkAzul {
-        color: #0095f6;
-        text-decoration: none;
-        cursor: pointer;
-        font-weight: 600;
-    }
-}
-
 /* Group 3 ------------- */
 .store {
     display: flex;
@@ -76,7 +62,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    .get-app {
+    &__getApp {
         width: 100%;
         margin: 10px 20px;
         text-align: center;
@@ -85,75 +71,52 @@
         font-size: 14px;
         line-height: 18px;
     }
-}
-.download {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 8px;
-    width: 100%;
-    margin: 10px 0;
-    .appDownload img {
-        height: 40px;
-        width: auto;
-        cursor: pointer;
+    &__download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 8px;
+        width: 100%;
+        margin: 10px 0;
+        &__app img {
+            height: 40px;
+            width: auto;
+            cursor: pointer;
+        }
     }
 }
 
 /* Footer ------------------*/
-.responsaveis,
-.footerLinks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 20px;
-    list-style: none;
-    font-family: $font-family;
-    color: $gray;
-    font-size: 12px;
-    font-weight: 400px;
-    flex-wrap: wrap;
-}
-.footerLinks li a,
-.responsaveis li {
-    color: $gray;
-    font-size: 12px;
-    font-weight: 400px;
-}
-.responsaveis li {
-    margin: 12px 0;
-}
-.footerLinks li {
-    margin-bottom: 12px;
-    a {
-        cursor: pointer;
-        &:hover {
-            text-decoration: underline;
+.footer {
+    &__bottom {
+        margin: 12px 0;
+    }
+    &__bottom,
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        list-style: none;
+        font-family: $font-family;
+        color: $gray;
+        font-size: 12px;
+        font-weight: 400px;
+        flex-wrap: wrap;
+    }
+    &__bottom li,
+    &__top li a {
+        color: $gray;
+        font-size: 12px;
+        font-weight: 400px;
+    }
+    &__top li {
+        margin-top: 12px;
+        a {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
-/* Media Query ------------- */
-
-// @media (max-width: 1024px) {
-//     .instagramContainer {
-//         width: 90%;
-//     }
-// }
-
-// @media (max-width: 650px) {
-//     body {
-//         background-color: white;
-//     }
-//     .instagramContainer {
-//         width: 90%;
-//     }
-//     .instagramFotoCelular {
-//         display: none;
-//     }
-//     .instagramContinueConta {
-//         width: 100%;
-//     }
-//     .containerGroup {
-//         border: none;
-//     }
-// }
