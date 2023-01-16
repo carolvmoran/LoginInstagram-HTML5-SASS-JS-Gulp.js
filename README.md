@@ -14,11 +14,13 @@ npm run dev
 <figcaption style="margin-bottom: 10px;">*Desktop:</figcaption>
 <img width="1440" src="/src/assets/imgReadme/Desktop.png" />
 <figcaption style="margin-bottom: 10px;">*Tablet:</figcaption>
-<img width="912" src="/src/assets/imgReadme/Tablet.png" />
+<img width="768" src="/src/assets/imgReadme/Tablet.png" />
 <figcaption style="margin-bottom: 10px;">*Mobile:</figcaption>
 <img width="414" src="/src/assets/imgReadme/Mobile.png" />
 </figure>
 <video width="320" height="240" controls="controls" autoplay="autoplay">
-<source src="/src/assets/imgReadme/Funcional.mov" type="video/mp4">
-<object data="" width="320" height="240">
-<embed width="320" height="240" src="/src/assets/imgReadme/Funcional.mov">
+<source src="/src/assets/imgReadme/Funcional.mov" type="video/mp4" />
+<object data="" width="320" height="240" >
+<embed width="320" height="240" src="/src/assets/imgReadme/Funcional.mov" />
+</object>
+</video>
