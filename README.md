@@ -17,11 +17,5 @@ npm run dev
 <img width="600" src="/src/assets/imgReadme/Tablet.png" />
 <figcaption style="margin-bottom: 10px;">*Mobile:</figcaption>
 <img width="414" src="/src/assets/imgReadme/Mobile.png" />
-<video width="320" height="240" controls="controls" autoplay="autoplay">
-<source src="/src/assets/imgReadme/Funcional.mov" type="video/mp4" />
-<object data="" width="320" height="240" >
-<embed width="320" height="240" src="/src/assets/imgReadme/Funcional.mov" />
-</object>
-</video>
 </figure>
 
