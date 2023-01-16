@@ -17,5 +17,5 @@ npm run dev
 <img width="600" src="/src/assets/imgReadme/Tablet.png" />
 <figcaption style="margin-bottom: 10px;">*Mobile:</figcaption>
 <img width="414" src="/src/assets/imgReadme/Mobile.png" />
-<img width="414" src="/src/assets/imgReadme/Funcional.gif" />
+<img width="768" src="/src/assets/imgReadme/Funcional.gif" />
 </figure>
