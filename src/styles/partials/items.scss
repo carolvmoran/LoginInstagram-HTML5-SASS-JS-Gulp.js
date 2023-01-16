@@ -90,6 +90,17 @@
 .footer {
     &__bottom {
         margin: 12px 0;
+        .skiptranslate.goog-te-gadget {
+            font-size: 0;
+            span {
+                display: none;
+            }
+            select {
+                border: none;
+                color: #8e8e8e;
+                font-size: 12px;
+            }
+        }
     }
     &__bottom,
     &__top {
