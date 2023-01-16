@@ -12,9 +12,9 @@ npm run dev
 
 <figure style="display: flex; flex-direction: column;">
 <figcaption style="margin-bottom: 10px;">*Desktop:</figcaption>
-<img width="1440" src="/src/assets/imgReadme/Desktop.png" />
+<img width="1280" src="/src/assets/imgReadme/Desktop.png" />
 <figcaption style="margin-bottom: 10px;">*Tablet:</figcaption>
-<img width="768" src="/src/assets/imgReadme/Tablet.png" />
+<img width="600" src="/src/assets/imgReadme/Tablet.png" />
 <figcaption style="margin-bottom: 10px;">*Mobile:</figcaption>
 <img width="414" src="/src/assets/imgReadme/Mobile.png" />
 <video width="320" height="240" controls="controls" autoplay="autoplay">
